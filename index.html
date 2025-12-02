@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>올리브영 - 제이슨 모모아의 로맨틱 마카다미아</title>
+    <style>
+        /* Reset & Basic Style */
+        body, h1, h2, h3, p, ul, li { margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif; color: #333; }
+        ul { list-style: none; }
+        a { text-decoration: none; color: inherit; }
+        body { background-color: #fff; }
+
+        /* Header */
+        .header-top-banner { background-color: #96c434; color: white; text-align: center; padding: 10px; font-size: 13px; }
+        .header-main { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; border-bottom: 1px solid #eee; max-width: 1200px; margin: 0 auto; }
+        .logo { font-size: 28px; font-weight: bold; color: #96c434; }
+        .search-bar { display: flex; border: 2px solid #96c434; border-radius: 25px; overflow: hidden; width: 400px; }
+        .search-input { border: none; padding: 10px 15px; flex-grow: 1; outline: none; }
+        .search-btn { background-color: #96c434; border: none; color: white; padding: 10px 20px; cursor: pointer; }
+        .header-icons { display: flex; gap: 20px; font-size: 14px; }
+        .header-nav { border-bottom: 1px solid #eee; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; gap: 30px; padding: 15px 40px; font-weight: bold; color: #555; }
+
+        /* Main Container */
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 40px; display: flex; gap: 50px; }
+
+        /* Left Column: Image */
+        .left-col { width: 50%; }
+        .product-image { width: 100%; border-radius: 10px; }
+
+        /* Right Column: Info */
+        .right-col { width: 50%; }
+        .brand-name { font-size: 14px; color: #777; margin-bottom: 10px; font-weight: bold; }
+        .product-title { font-size: 26px; margin-bottom: 15px; line-height: 1.4; }
+        .product-copy { font-size: 16px; color: #f06292; margin-bottom: 25px; font-weight: bold; }
+
+        .price-info { margin-bottom: 25px; }
+        .original-price { text-decoration: line-through; color: #999; font-size: 16px; }
+        .discount-rate { color: #f06292; font-size: 28px; font-weight: bold; margin-right: 10px; }
+        .final-price { font-size: 28px; font-weight: bold; }
+        .price-unit { font-size: 18px; }
+
+        .delivery-info { border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 20px 0; margin-bottom: 25px; }
+        .delivery-row { display: flex; align-items: center; margin-bottom: 10px; font-size: 14px; }
+        .delivery-label { width: 80px; color: #777; }
+        .today-dream-badge { background-color: #96c434; color: white; padding: 3px 8px; border-radius: 12px; font-size: 11px; margin-right: 5px; font-weight: bold; }
+
+        .purchase-actions { display: flex; gap: 10px; }
+        .btn { flex-grow: 1; padding: 15px; font-size: 18px; font-weight: bold; border-radius: 5px; cursor: pointer; text-align: center; }
+        .btn-cart { border: 1px solid #ddd; background-color: white; color: #333; }
+        .btn-buy { background-color: #96c434; border: none; color: white; }
+
+        /* Bottom Tabs */
+        .product-tabs { max-width: 1200px; margin: 60px auto; padding: 0 40px; }
+        .tab-header { display: flex; border-bottom: 2px solid #333; }
+        .tab-item { flex-grow: 1; text-align: center; padding: 15px; font-weight: bold; color: #777; cursor: pointer; }
+        .tab-item.active { color: #333; border-bottom: 3px solid #96c434; }
+        .tab-content { padding: 40px 0; text-align: center; }
+        .detail-banner { background-color: #fff0f5; padding: 50px; margin-bottom: 30px; border-radius: 10px; }
+        .detail-banner h3 { color: #f06292; margin-bottom: 20px; }
+
+        /* Footer */
+        footer { background-color: #f9f9f9; padding: 40px; text-align: center; color: #777; font-size: 13px; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-top-banner">지금 가입하면 첫 구매 무료배송! 앱 다운로드 시 추가 혜택</div>
+        <div class="header-main">
+            <div class="logo">OLIVEYOUNG</div>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="제이슨 모모아의 선택을 검색해보세요">
+                <button class="search-btn">검색</button>
+            </div>
+            <div class="header-icons">
+                <span>로그인</span> | <span>회원가입</span> | <span>장바구니</span>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="nav-container">
+                <span>카테고리</span> <span>오특</span> <span>랭킹</span> <span>기획전</span> <span>이벤트</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="left-col">
+            <img src="product_poster.png" alt="제이슨 모모아 로맨틱 마카다미아" class="product-image" onerror="this.src='https://via.placeholder.com/600x900?text=이미지를+product_poster.png로+저장해주세요'">
+        </div>
+
+        <div class="right-col">
+            <div class="brand-name">ALOHA NATURE ></div>
+            <h1 class="product-title">[단독] 제이슨 모모아의 선택, 로맨틱 통마카다미아 (껍질째 구운) 350g + 전용 오프너</h1>
+            <p class="product-copy">"그가 당신에게 권하는 가장 다정한 순간."</p>
+
+            <div class="price-info">
+                <div><span class="original-price">24,900원</span></div>
+                <div style="margin-top: 5px;">
+                    <span class="discount-rate">20%</span>
+                    <span class="final-price">19,900</span><span class="price-unit">원</span>
+                </div>
+            </div>
+
+            <div class="delivery-info">
+                <div class="delivery-row">
+                    <span class="delivery-label">배송정보</span>
+                    <span><span class="today-dream-badge">오늘드림</span> 오후 8시 전 주문 시 오늘 도착!</span>
+                </div>
+                <div class="delivery-row">
+                    <span class="delivery-label">배송비</span>
+                    <span>2,500원 (3만원 이상 구매 시 무료)</span>
+                </div>
+                <div class="delivery-row" style="margin-top: 15px;">
+                    <span class="delivery-label">혜택정보</span>
+                    <span style="color: #96c434; font-weight: bold;">최대 1,990P 적립 (CJ ONE)</span>
+                </div>
+            </div>
+
+            <div class="purchase-actions">
+                <button class="btn btn-cart">장바구니</button>
+                <button class="btn btn-buy">바로구매</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-tabs">
+        <div class="tab-header">
+            <div class="tab-item active">상품설명</div>
+            <div class="tab-item">구매정보</div>
+            <div class="tab-item">리뷰 (324)</div>
+            <div class="tab-item">Q&A (12)</div>
+        </div>
+        <div class="tab-content">
+            <div class="detail-banner">
+                <h3>MD's Pick! 이런 분들께 추천해요 💖</h3>
+                <p>✔️ 소중한 사람에게 특별하고 센스 있는 선물을 찾으시는 분</p>
+                <p>✔️ 뻔한 디저트 대신, 고급스럽고 로맨틱한 티타임을 원하시는 분</p>
+                <p>✔️ 제이슨 모모아의 다정한 눈빛을 소장하고 싶으신 분</p>
+            </div>
+            <img src="product_poster.png" style="width: 80%; max-width: 800px; border-radius: 10px;">
+            <p style="margin-top: 30px; font-size: 18px; line-height: 1.8;">
+                당신의 일상을 화보처럼 만들어줄<br>
+                <strong>가장 로맨틱한 견과류, 알로하 네이처 통마카다미아.</strong><br><br>
+                껍질째 구워 본연의 고소함과 영양을 그대로 지켰습니다.<br>
+                동봉된 전용 오프너로 '톡' 까먹는 재미까지 선물하세요.<br>
+                핑크빛 무드 속에서 즐기는 달콤한 휴식, 지금 만나보세요.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        (주)씨제이올리브영 | 대표이사 : 이선정 | 사업자등록번호 : 000-00-00000 <br>
+        주소 : 서울특별시 용산구 한강대로 000 | 통신판매업신고번호 : 2023-서울용산-0000 <br>
+        COPYRIGHT ⓒ CJ OLIVEYOUNG. ALL RIGHTS RESERVED.
+    </footer>
+
+</body>
+</html>
